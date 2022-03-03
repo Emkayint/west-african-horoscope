@@ -16,4 +16,14 @@
     height: 100%;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+}
+
+.info{
+    margin: 0 auto;
+    width: fit-content;
+    align-self: center;
+    text-align: center;
+    color: beige;
 }
