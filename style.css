@@ -9,15 +9,13 @@
     height: 100vh;
     background-size: cover;
     background-position: center;
-    padding: 4%;
+    padding: 1%;
 }
 
 .content{
     height: 100%;
     border-radius: 30px;
-    background: rgba(0, 0, 0, 0.5);
-    display: flex;
-    align-items: center;
+    background: rgba(25, 78, 146, 0.5);
 }
 
 .info{
@@ -26,4 +24,43 @@
     align-self: center;
     text-align: center;
     color: beige;
+    padding-top: 15%;
+    height: 85%;
+}
+
+nav{
+    margin: 0 auto;
+    width: fit-content;
+
+}
+nav a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+.comment{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: rgba(102, 25, 146, 0.9);
+}
+
+.homeicon{
+    color: white;
+    font-size: 40px;
+    padding: 20px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: rgba(102, 25, 146, 0.9);
+}
+
+.icons{
+    color: white;
+    font-size: 40px;
+    padding: 10px;
+    margin-right: 20px;
+    border-radius: 50%;
+    background: rgba(102, 25, 146, 0.9);
 }
