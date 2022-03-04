@@ -1,18 +1,21 @@
-let day = 30;
-let month = 1;
+let DD = 30;
+let MM = 1;
 let year = 17672;
+let myday = DD.toString();
+let mymonth = DD.toString();
+let myyear = year.toString();
+let CC = parseInt(myyear.slice(0, 2));
+let YY = parseInt(myyear.slice(2, 4))
+console.log(CC);
+console.log(YY);
 
 let monthsDays = [ 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 ]
 
-console.log(monthsDays[month-1])
+console.log(monthsDays[MM-1])
 function validate(){
-    let myday = day.toString();
-    let mymonth = day.toString();
-    let myyear = year.toString();
-
-    if(day > monthsDays[month-1] || day < 1 || myday.length > 2){
+    if(DD > monthsDays[MM-1] || DD < 1 || myday.length > 2){
         console.log("error");
-    } else if (month > 12 || month < 1){
+    } else if (MM > 12 || MM < 1){
         console.log("error");
     } else if (year < 1000 || myyear.length > 4){
         console.log("error wrong ");
@@ -21,6 +24,6 @@ function validate(){
 }
 validate()
 
-// function calculate(){
+function calculate(){
 
-// }
+}
