@@ -1,4 +1,4 @@
-let day = 1;
+let day = 30;
 let month = 12;
 let year = 1767;
 
@@ -10,7 +10,7 @@ function validate(){
     let mymonth = day.toString();
     let myyear = year.toString();
 
-    if(day > monthsDays[month-1] || day < 1){
+    if(day > monthsDays[month-1] || day < 1 || myday.length > 2){
         console.log("error")
     }
     
