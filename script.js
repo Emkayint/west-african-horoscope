@@ -1,5 +1,5 @@
-let day = 12;
-let month = 2;
+let day = -1;
+let month = 1;
 let year = 1767;
 
 let monthsDays = [
@@ -23,5 +23,9 @@ function validate(){
     let mymonth = day.toString();
     let myyear = year.toString();
 
+    if(day > monthsDays[month-1][1] || day < 1){
+        console.log("error")
+    }
     
 }
+validate()
