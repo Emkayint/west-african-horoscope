@@ -1,13 +1,14 @@
-let DD = 4;
+let DD = 05;
 let MM = 3;
 let year = 2022;
 let myday = DD.toString();
 let mymonth = DD.toString();
 let myyear = year.toString();
 let CC = parseInt(myyear.slice(0, 2));
-let YY = parseInt(myyear.slice(2, 4))
-console.log(CC);
-console.log(YY);
+let YY = parseInt(myyear.slice(2, 4));
+let gender = "female";
+
+
 
 let MM2 = [11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
@@ -36,5 +37,14 @@ function calculate(){
 }
 
 function displayInfo(data){
-    console.log(data)
+    male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
+    female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+    if( gender === "male"){
+        console.log(`${male[data]}`)
+    } else if (gender === "female"){
+        console.log(`${female[data]}`)
+    } else {
+        console.log("error")
+    }
 }
