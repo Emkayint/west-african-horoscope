@@ -13,37 +13,50 @@ function validate() {
     let monthsDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
     if (DD > monthsDays[MM - 1] || DD < 1 || myday.length > 2) {
-        console.log(`${DD} ${MM} ${year}`);
+        alert('Error');
+        
     } else if (MM > 12 || MM < 1 || mymonth.length > 2) {
         alert("Months Does Not Exist");
+        
     } else if (year < 1000 || myyear.length > 4) {
-        console.log("error wrong ");
+        alert("The year you Enterd is incorrect ");
+        
     } else if(gender === ''){
-        console.log("error")
+        alert("Please Choose Your Gender");
+        
+    } else if(MM === ""){
+        alert("error");
+        
+    } else if(year === ""){
+        alert("The year Field is not Field");
+        
+    } else if(DD === ""){
+        alert("Please Insert Date");
+        
+    } else if(name === ""){
+        alert("Please Enter Your Name");
+        
     } else {
-        calculate(year, MM, DD, gender)
+        calculate(year, MM, DD, gender);
     }
 
 }
 
 function calculate(year, MM, DD, gender) {
-    let t = [0, 3, 2, 5, 0, 3, 5, 1, 4, 6, 2, 4];
-    year -= (MM < 3) ? 1 : 0;
-    let d = Math.round((year + year / 4 - year / 100 + year / 400 + t[MM - 1] + DD) % 7);
-    displayInfo(d, gender)
+    let day = new Date(`${MM} ${DD}, ${year}`);
+    let d = day.getDay();
+    displayInfo(d, gender, day);
 }
 
-function displayInfo(data, gender, year, MM, DD) {
-    male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
-    female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday']
+function displayInfo(d, gender, day) {
+    let males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
+    let female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+    let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday']
 
     if (gender === "male") {
-        console.log(`${male[data]}`)
-    } else if (gender === "female") {
-        console.log(`${female[data]}`)
-    } else {
-        console.log("error")
+        alert(`You were born on ${dayOfWeek[d]} your Akan name is ${males[d]}`);
+    } else if(gender === "female") {
+        alert(`${female[d]}`);
     }
     reset();
 }
@@ -52,4 +65,7 @@ function reset() {
     document.getElementById("years").value = "";
     document.getElementById("months").value = '';
     document.getElementById("dates").value = '';
+    document.getElementById("name").value = '';
+    document.getElementById('gender').value = '';
+
 }
