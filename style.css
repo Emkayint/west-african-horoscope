@@ -7,12 +7,10 @@ body{
     position: relative;
 }
 .big-container{
-    position: relative;
-    z-index: -1;
-    margin: 0;
+    height: fit-content;
 }
 .home{
-    background-image: url('assets/star-sign-gcf4d76a9c_1280.jpg');
+    background-image: url('assets/fantasy-g42d5136d6_1280.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -23,7 +21,7 @@ body{
 .content{
     height: 100%;
     border-radius: 30px;
-    background: rgba(25, 78, 146, 0.5);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .info{
@@ -61,15 +59,19 @@ nav a{
     padding: 20px;
     margin-right: 20px;
     border-radius: 50%;
-    background: rgba(102, 25, 146, 0.9);
+    background: rgba(102, 25, 146, 0.2);
 }
 
 .icons{
     color: white;
     font-size: 40px;
-    padding: 10px;
+    padding: 20px;
     margin-right: 20px;
     border-radius: 50%;
-    background: rgba(102, 25, 146, 0.9);
+    background: rgba(102, 25, 146, 0.2);
 }
 
+.section-2{
+    height: 100vh;
+    background-image: url("assets/stars-gbc68cdb0c_1280.jpg");
+}
