@@ -9,41 +9,43 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
 </head>
 <body>
-    <div id="home" class="home">
-        <div class="content">
-            <div class="info">
-                <h1>Know Your Ghanian <br> Kwasi Name</h1>
-                <p>Use your birth date to know your kwasi name</p>
+    
+    <div class="w3-container w3-display-content">
+        <div id="home" class="home mySlides">
+            <div class="content">
+                <div class="info">
+                    <h1>Know Your Ghanian <br> Kwasi Name</h1>
+                    <p>Use your birth date to know your kwasi name</p>
+                </div>
+    
+                
             </div>
-
-            <nav>
-                <a href="#test" class="comment"><i class="fa fa-comments fa-fw"></i></a>
-                <a href="#home" class="homeicon"><i class="fa fa-home fa-fw"></i></a>
-                <a href="#test" class="icons"><i class="fa fa-icons fa-fw"></i></a>
-            </nav>
-            
         </div>
-    </div>
-
-    <div class="container-fluid bg-dark" id="section-2">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    <form>
-                        <input type="number" name="date" class="control" placeholder="Date" id="dates"><br><span class="text-white" >Date</span><br><br>
-                        <input type="number" name="month" class="control" placeholder="Month" id="months"><br><span class="text-white">Month</span><br><br>
-                        <input type="number" name="year" class="control" placeholder="Year" id="years"><br><span class="text-white">Year</span>
-                        <br><br>
-                        <button type="button" onclick="validate()">Submit</button>
-                    </form>
+    
+        <div class="w3-container mySlides" id="section-2">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <form>
+                            <input type="number" name="date" class="control" placeholder="Date" id="dates"><br><span class="text-white" >Date</span><br><br>
+                            <input type="number" name="month" class="control" placeholder="Month" id="months"><br><span class="text-white">Month</span><br><br>
+                            <input type="number" name="year" class="control" placeholder="Year" id="years"><br><span class="text-white">Year</span>
+                            <br><br>
+                            <button type="button" onclick="validate()">Submit</button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
+        
     </div>
+    
 
     <script src="script.js"></script>
+    <script src="animations.js"></script>
 </body>
 </html>

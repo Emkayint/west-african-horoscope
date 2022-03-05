@@ -1,5 +1,3 @@
-
-
 function validate(){
     let DD = document.getElementById('dates').value;
     let MM = document.getElementById('months').value;
@@ -16,7 +14,7 @@ function validate(){
     if(DD > monthsDays[MM-1] || DD < 1 || myday.length > 2){
         console.log(`${DD} ${MM} ${year}`);
     } else if (MM > 12 || MM < 1 || mymonth.length > 2){
-        console.log("error");
+        alert("Months Does Not Exist");
     } else if (year < 1000 || myyear.length > 4){
         console.log("error wrong ");
     } else {
@@ -35,7 +33,7 @@ function calculate(year, MM, DD, gender){
 function displayInfo(data, gender, year, MM, DD){
     male = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
     female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
-    dayOfWeek = ['Sunday', ]
+    dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday']
 
     if( gender === "male"){
         console.log(`${male[data]}`)
