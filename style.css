@@ -22,16 +22,16 @@ body{
     height: 100%;
     border-radius: 30px;
     background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    font-size: large;
 }
 
 .info{
     margin: 0 auto;
     width: fit-content;
-    align-self: center;
     text-align: center;
     color: beige;
-    padding-top: 15%;
-    height: 85%;
 }
 
 nav{
@@ -72,14 +72,15 @@ nav a{
 }
 
 .section-2{
-    height: 100vh;
+    height: 100%;
     background-image: url("assets/stars-gbc68cdb0c_1280.jpg");
+    background-position: center;
+    background-size: cover;
 }
 
 /* iphone mockup */
 
 .cards{
-    padding: 20px;
     border-radius: 20px;
     border-left: 10px solid black;
     border-right: 10px solid black;
@@ -90,11 +91,13 @@ nav a{
     background-image: url("assets/star-sign-gcf4d76a9c_1280.jpg");
     background-position: center;
     background-size: cover;
-    margin-top: 30px;
     margin: 0 auto;
 }
 .for{
-    padding-top:20px;
+    display: flex;
+    margin: 0;
+    align-items: center;
+    height: 100vh;
 }
 
 form button{
@@ -107,4 +110,5 @@ form button{
 
 .white{
     background-color: rgba(255, 255, 255, 0.3);
+    height: 100%;
 }
