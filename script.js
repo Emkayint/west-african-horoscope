@@ -49,12 +49,11 @@ function calculateDate(year, MM, DD, gender, name) {
     displayInfo(d, gender, name, DD, MM, year);
 }
 
-function displayInfo(d, gender, name, MM, DD, year) {
+function displayInfo(d, gender, name, DD, MM, year) {
     let males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
     let female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday'];
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
     if (gender === "male") {
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
