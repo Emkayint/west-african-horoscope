@@ -8,12 +8,10 @@ function validate() {
     let gender = document.getElementById('gender').value;
     let name = document.getElementById("name").value;
 
-    let MM2 = [11, 12, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-
     let monthsDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
     if (DD > monthsDays[MM - 1] || DD < 1 || myday.length > 2) {
-        alert('Error');
+        alert('Choose The Correct Date');
         
     } else if (MM > 12 || MM < 1 || mymonth.length > 2) {
         alert("Months Does Not Exist");
@@ -37,18 +35,18 @@ function validate() {
         alert("Please Enter Your Name");
         
     } else {
-        calculate(year, MM, DD, gender);
+        calculate(year, MM, DD, gender, name);
     }
 
 }
 
-function calculate(year, MM, DD, gender) {
+function calculate(year, MM, DD, gender, name) {
     let day = new Date(`${MM} ${DD}, ${year}`);
     let d = day.getDay();
-    displayInfo(d, gender, day);
+    displayInfo(d, gender, day, name);
 }
 
-function displayInfo(d, gender, day) {
+function displayInfo(d, gender, day, name) {
     let males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
     let female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday']
