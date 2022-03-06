@@ -13,7 +13,7 @@ A simple akan name generator
 ## Installation
 
 * Use any internet browser preffered updated version
-* Make sure you have internet conneection
+* Make sure you have internet connection
 
 ## Usage
 
@@ -27,7 +27,7 @@ Submit and you will see your results
 
 ## Technologies Used
 
-* HTML & CSS - For the page structur and styling
+* HTML & CSS - For the page structure and styling
 * Bootsrap - Page responsiveness
 * Javascript - Page interactiveness
 
