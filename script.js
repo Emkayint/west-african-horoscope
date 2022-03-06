@@ -52,7 +52,7 @@ function displayInfo(d, gender, day, name) {
     let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday']
 
     if (gender === "male") {
-        alert(`You were born on ${dayOfWeek[d]} your Akan name is ${males[d]}`);
+        document.getElementById('birthday').innerHTML = `${day}`
     } else if(gender === "female") {
         alert(`${female[d]}`);
     }
