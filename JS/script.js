@@ -1,3 +1,9 @@
+function displayBlock(){
+    let show = document.getElementById('full').style.display = "block";
+    setTimeout(function (){document.getElementById('full').style.display = "none"}, 20000)
+}
+
+
 function validate() {
     let DD = document.getElementById('dates').value;
     let MM = document.getElementById('months').value;
@@ -54,13 +60,13 @@ function displayInfo(d, gender, name, DD, MM, year) {
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
 
     if (gender === "male") {
-        document.getElementById('full').style.display = "block";
+        displayBlock();
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementById("Akan").innerHTML = `${males[d]} is your Akan name`;
 
     } else if(gender === "female") {
-        document.getElementById('full').style.display = "block";
+        displayBlock();
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementById("Akan").innerHTML = `${female[d]} is your Akan name`;
@@ -78,3 +84,5 @@ function reset() {
     document.getElementById('gender').value = '';
 
 }
+
+
