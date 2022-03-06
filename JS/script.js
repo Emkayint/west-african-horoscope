@@ -38,8 +38,6 @@ function validate() {
         calculateDate(year, MM, DD, gender, name);
     }
 
-    document.getElementById('full').style.display = "block";
-
 }
 
 function calculateDate(year, MM, DD, gender, name) {
@@ -54,12 +52,15 @@ function displayInfo(d, gender, name, DD, MM, year) {
     let female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday'];
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
     if (gender === "male") {
+        document.getElementById('full').style.display = "block";
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementById("Akan").innerHTML = `${males[d]} is your Akan name`;
 
     } else if(gender === "female") {
+        document.getElementById('full').style.display = "block";
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementById("Akan").innerHTML = `${female[d]} is your Akan name`;
