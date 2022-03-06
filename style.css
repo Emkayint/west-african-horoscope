@@ -130,3 +130,13 @@ form button{
     background-color: rgba(255, 255, 255, 0.3);
     height: 100%;
 }
+.heights{
+    height: 100%;
+    border-radius: 10px;
+    background: #150050;
+}
+.full{
+    height: 100%;
+    border: 5px solid #4e17e4;
+    border-radius: 20px;
+}
