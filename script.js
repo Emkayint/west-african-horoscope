@@ -35,29 +35,32 @@ function validate() {
         alert("Please Enter Your Name");
         
     } else {
-        calculate(year, MM, DD, gender, name);
+        calculateDate(year, MM, DD, gender, name);
     }
 
 }
 
-function calculate(year, MM, DD, gender, name) {
+function calculateDate(year, MM, DD, gender, name) {
     let day = new Date(`${MM} ${DD}, ${year}`);
     let d = day.getDay();
-    displayInfo(d, gender, day, name, DD, MM, year);
+    displayInfo(d, gender, name, DD, MM, year);
 }
 
 function displayInfo(d, gender, name, MM, DD, year) {
     let males = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", 'Kofi', "Kwame"];
     let female = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
     let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday'];
-    let month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-
+    let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     if (gender === "male") {
-        document.getElementsByClassName('fullName').innerHTML = `Welcome ${name}`;
-        document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${month[MM-1]}, ${year}`;
+        console.log(name);
+        document.getElementById('fullName').innerHTML = `Welcome ${name}`;
+        document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementsByClassName("akan").innerHTML = `${males[d]} is your Akan name`;
     } else if(gender === "female") {
-        alert(`${female[d]}`);
+        document.getElementsByClassName('fullName').innerHTML = `Welcome ${name}`;
+        document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
+        document.getElementsByClassName("akan").innerHTML = `${female[d]} is your Akan name`;
+
     }
     reset();
 }
