@@ -37,6 +37,8 @@ function validate() {
     } else {
         calculateDate(year, MM, DD, gender, name);
     }
+    document.getElementById('full').style.display = "block";
+
 
 }
 
@@ -52,7 +54,6 @@ function displayInfo(d, gender, name, MM, DD, year) {
     let dayOfWeek = ['Sunday', "Monday", "Tuesday", "Wednesday", 'Thursday', 'Friday', 'Suturday'];
     let months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     if (gender === "male") {
-        console.log(name);
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementsByClassName("akan").innerHTML = `${males[d]} is your Akan name`;

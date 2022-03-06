@@ -138,5 +138,7 @@ form button{
     height: 100%;
     border: 5px solid #4e17e4;
     border-radius: 20px;
+}
+#full{
     display: none;
 }
