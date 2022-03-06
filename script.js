@@ -58,15 +58,15 @@ function displayInfo(d, gender, name, MM, DD, year) {
     if (gender === "male") {
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
-        document.getElementsByClassName("akan").innerHTML = `${males[d]} is your Akan name`;
+        document.getElementById("Akan").innerHTML = `${males[d]} is your Akan name`;
 
     } else if(gender === "female") {
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
-        document.getElementsByClassName("akan").innerHTML = `${female[d]} is your Akan name`;
+        document.getElementById("Akan").innerHTML = `${female[d]} is your Akan name`;
 
     }
-    
+
     reset();
 }
 

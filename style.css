@@ -2,15 +2,20 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Bree Serif', serif;
+    font-family: 'EB Garamond', serif;
 }
 
 body{
     position: relative;
 }
 
-h1{
+h1, h2, h3, h4, h5, h5{
+    font-family: 'Bree Serif', serif;
     font-size: 10vh;
+}
+p{
+    font-family: 'EB Garamond', serif;
+    font-size: x-large;
 }
 
 .big-container{
@@ -141,8 +146,6 @@ form button{
 }
 .full{
     height: 100%;
-    border: 5px solid #4e17e4;
-    border-radius: 20px;
 }
 
 #full{
