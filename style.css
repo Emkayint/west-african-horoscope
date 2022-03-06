@@ -4,15 +4,19 @@
     padding: 0;
     font-family: 'Bree Serif', serif;
 }
+
 body{
     position: relative;
 }
+
 h1{
     font-size: 10vh;
 }
+
 .big-container{
     height: fit-content;
 }
+
 .home{
     background-image: url('assets/VecteezySolarEclipseBackgroundAT0621_generated.jpg');
     height: 100vh;
@@ -97,6 +101,7 @@ nav a{
     background-size: cover;
     margin: 0 auto;
 }
+
 .card2{
     border-radius: 20px;
     border-left: 10px solid black;
@@ -139,6 +144,7 @@ form button{
     border: 5px solid #4e17e4;
     border-radius: 20px;
 }
+
 #full{
     display: none;
 }
