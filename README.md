@@ -15,7 +15,7 @@ A simple akan name generator
 * Use any internet browser preffered updated version
 * Make sure you have internet connection
 
-## Usage
+## Usage / BDD
 
 ```
 Click on the link provided.
