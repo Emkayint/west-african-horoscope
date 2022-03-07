@@ -68,20 +68,20 @@ nav a{
 
 .homeicon{
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     padding: 20px;
     margin-right: 20px;
     border-radius: 50%;
-    background: rgba(102, 25, 146, 0.2);
+    border: 1px solid white;
 }
 
 .icons{
     color: white;
-    font-size: 40px;
+    font-size: 20px;
     padding: 20px;
     margin-right: 20px;
     border-radius: 50%;
-    background: rgba(102, 25, 146, 0.2);
+    border: 1px solid white;
 }
 
 .section-2{
