@@ -1,15 +1,7 @@
 function displayBlock(){
     let show = document.getElementById('full').style.display = "block";
-    setTimeout(function (){document.getElementById('full').style.display = "none"}, 20000)
+    setTimeout(function (){document.getElementById('full').style.display = "none"}, 20000);
 }
-
-// function validateDate(){
-//     let today = new Date();
-//     console.log(today.getFullYear())
-// }
-
-// validateDate();
-
 
 function validate() {
     let DD = document.getElementById('dates').value;
@@ -28,8 +20,9 @@ function validate() {
     let myyears = today.getFullYear();
 
     let monthsDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-
-    if (DD > monthsDays[MM - 1] || DD < 1 || myday.length > 2) {
+    if (DD === "" || year === '' || MM === "" || name === ''){
+        alert('Please fill in the inputs')
+    } else if (DD > monthsDays[MM - 1] || DD < 1 || myday.length > 2) {
         alert('Choose The Correct Date');
         
     } else if (MM > 12 || MM < 1 || mymonth.length > 2) {
@@ -55,7 +48,7 @@ function validate() {
         
     } else if(DD > mydays && MM > mymonths && year >= myyears){
         alert("We can check future Dates")
-    }else {
+    } else {
         calculateDate(year, MM, DD, gender, name);
     }
 
@@ -82,7 +75,7 @@ function displayInfo(d, gender, name, DD, MM, year) {
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
         document.getElementById("Akan").innerHTML = `${males[d]} is your Akan name`;
 
-    } else if(gender === "female") {
+    } else if (gender === "female") {
         displayBlock();
         document.getElementById('fullName').innerHTML = `Welcome ${name}`;
         document.getElementById('birthday').innerHTML = `Birthday was on ${dayOfWeek[d]}, ${DD} ${months[MM-1]}, ${year}`;
