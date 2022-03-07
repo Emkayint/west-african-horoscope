@@ -3,6 +3,13 @@ function displayBlock(){
     setTimeout(function (){document.getElementById('full').style.display = "none"}, 20000)
 }
 
+// function validateDate(){
+//     let today = new Date();
+//     console.log(today.getFullYear())
+// }
+
+// validateDate();
+
 
 function validate() {
     let DD = document.getElementById('dates').value;
@@ -13,6 +20,12 @@ function validate() {
     let myyear = year.toString();
     let gender = document.getElementById('gender').value;
     let name = document.getElementById("name").value;
+
+    let today = new Date();
+
+    let mydays = today.getDate();
+    let mymonths =today.getMonth();
+    let myyears = today.getFullYear();
 
     let monthsDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 
@@ -40,11 +53,15 @@ function validate() {
     } else if(name === ""){
         alert("Please Enter Your Name");
         
-    } else {
+    } else if(DD > mydays && MM > mymonths && year >= myyears){
+        alert("We can check future Dates")
+    }else {
         calculateDate(year, MM, DD, gender, name);
     }
 
 }
+
+
 
 function calculateDate(year, MM, DD, gender, name) {
     let day = new Date(`${MM} ${DD}, ${year}`);
