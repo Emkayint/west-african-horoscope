@@ -150,4 +150,35 @@ form button{
 
 #full{
     display: none;
+    margin: 0;
+}
+
+.mydot{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #ffff00;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+.mydot1{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #00cc00;
+    margin-right: 10px;
+    padding: 7px;
+}
+
+.mydot2{
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color: #9966ff;
+    margin-right: 10px;
+    padding: 7px;
 }
