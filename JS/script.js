@@ -20,6 +20,9 @@ function validate() {
     let myyears = today.getFullYear();
 
     let monthsDays = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+    if(year % 4 === 0){
+        monthsDays[1] = 29;
+    }
     if (DD === "" || year === '' || MM === "" || name === ''){
         alert('Please fill in the inputs')
     } else if (DD > monthsDays[MM - 1] || DD < 1 || myday.length > 2) {
